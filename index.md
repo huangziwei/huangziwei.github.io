@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## Publication
 
-You can use the [editor on GitHub](https://github.com/huangziwei/huangziwei.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+See: [Google Scholar](https://scholar.google.com/citations?user=nCAr1egAAAAJ&hl=en)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 2016-
 
-### Markdown
+Ph.D in neuroscience supervised by [Philipp Berens](http://www.eye-tuebingen.de/berens/), at University of Tübingen, Germany. I built [RFEst](https://github.com/berenslab/RFEst), a Python toolbox for neuronal receptive field estimation. I studied dendritic signal integration on different types of mouse retinal ganglion cell with [Yanli Ran, et al](https://www.biorxiv.org/content/10.1101/753335v1.abstract).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 2013-2015
 
-```markdown
-Syntax highlighted code block
+Master of science in neuroscience at Norwegian University of Science and Technology, Norway. I did my thesis at Kavli Institute for Systems Neuroscience with [Benjamin Dunn](https://www.ntnu.edu/employees/benjamin.dunn). 
 
-# Header 1
-## Header 2
-### Header 3
+## 2009-2013
 
-- Bulleted
-- List
+Studied psychology at Guangdong University of Foreign Studies, China. 
 
-1. Numbered
-2. List
+---
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/huangziwei/huangziwei.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+I speak [Hoisan-wa](https://en.wikipedia.org/wiki/Taishanese), [Cantonese](https://en.wikipedia.org/wiki/Cantonese), [Mandarin](https://en.wikipedia.org/wiki/Mandarin_Chinese), English, and (a little) Japanese. 
