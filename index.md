@@ -13,7 +13,3 @@ Master of science in neuroscience at Norwegian University of Science and Technol
 ## 2009-2013
 
 Studied psychology at Guangdong University of Foreign Studies, China. 
-
----
-
-I speak [Hoisan-wa](https://en.wikipedia.org/wiki/Taishanese), [Cantonese](https://en.wikipedia.org/wiki/Cantonese), [Mandarin](https://en.wikipedia.org/wiki/Mandarin_Chinese), English, and (a little) Japanese. 
