@@ -1,6 +1,6 @@
 ## Publication
 
-See: [Google Scholar](https://scholar.google.com/citations?user=nCAr1egAAAAJ&hl=en)
+See: [Semantic Scholar](https://www.semanticscholar.org/author/47272071)
 
 ## 2016-
 
