@@ -1,6 +1,14 @@
-## CV
+# CV
 
-### 2016-
+## Employment
+
+### 2021-
+
+Postdoc in Data Science, still with Philiip Berens in Tübingen. I am currently working on prediction stroke rehabilitation with statistical modeling.
+
+## Education
+
+### 2016-2022
 
 Ph.D in neuroscience supervised by [Philipp Berens](http://www.eye-tuebingen.de/berens/), at University of Tübingen, Germany. I built [RFEst](https://github.com/berenslab/RFEst), a Python toolbox for neuronal receptive field estimation. I studied dendritic signal integration on different types of mouse retinal ganglion cell with [Yanli Ran, et al](https://www.biorxiv.org/content/10.1101/753335v1.abstract).
 
