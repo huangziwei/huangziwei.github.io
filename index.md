@@ -2,7 +2,7 @@
 
 ## Employment
 
-### 2021-
+### 2022-
 
 Postdoc in Data Science, still with Philiip Berens in Tübingen. I am currently working on prediction stroke rehabilitation with statistical modeling.
 
