@@ -2,9 +2,13 @@
 
 ## Employment
 
-### 2022-
+### 2023-
 
-Postdoc in Data Science, still with Philiip Berens in Tübingen. I am currently working on predicting stroke rehabilitation with statistical modeling and developing [pycircstat2](https://github.com/circstat/pycircstat2), a new version of circular statistics Python toolbox. 
+Scientific programmer at Berens Lab, developing [pycircstat2](https://github.com/circstat/pycircstat2).
+
+### 2022-2023
+
+Postdoc at Berens Lab, working on predicting stroke rehabilitation with statistical modeling.
 
 ## Education
 
