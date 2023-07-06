@@ -4,7 +4,10 @@
 
 ### 2023-
 
-Scientific programmer at Berens Lab, developing [pycircstat2](https://github.com/circstat/pycircstat2).
+Scientific programmer at Berens Lab, working on:
+
+- [retimgtools](https://retimgtools.fly.dev), a web-based tool for retinal images annotation and evaluation;
+- [pycircstat2](https://github.com/circstat/pycircstat2), a new Python port of [CircStat](https://github.com/circstat/circstat-matlab);
 
 ### 2022-2023
 
@@ -14,7 +17,7 @@ Postdoc at Berens Lab, working on predicting stroke rehabilitation with statisti
 
 ### 2016-2022
 
-Ph.D in neuroscience supervised by [Philipp Berens](http://www.eye-tuebingen.de/berens/), at University of Tübingen, Germany. I built [RFEst](https://github.com/berenslab/RFEst), a Python toolbox for neuronal receptive field estimation. I studied dendritic signal integration on different types of mouse retinal ganglion cell with [Yanli Ran, et al](https://www.biorxiv.org/content/10.1101/753335v1.abstract).
+Ph.D in neuroscience supervised by [Philipp Berens](http://www.eye-tuebingen.de/berens/), at University of Tübingen, Germany. I built [RFEst](https://github.com/berenslab/RFEst), a Python toolbox for neuronal receptive field estimation. I studied dendritic signal integration on different types of mouse retinal ganglion cell with [Yanli Ran, et al](https://www.biorxiv.org/content/10.1101/753335v1.abstract). 
 
 ### 2013-2015
 
