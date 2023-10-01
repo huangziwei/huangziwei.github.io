@@ -584,3 +584,130 @@ details summary {
   }
 
 }
+
+/* Animation */
+
+#home {
+  font-size: 5.8em;
+}
+
+.type-wrapper {
+  display: inline;
+  background-color: #F9E259;
+  color: black;
+  padding: 0.2em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;   
+  display: inline-block;
+  font-weight: normal;
+
+}
+
+
+.type-wrapper::after {
+  content: "|";
+  animation: cursor 1s infinite;
+}
+
+.type-wrapper::before {
+  animation: typing 15s steps(50, end) infinite;
+  content: "\A";
+  white-space: break-spaces;
+  font-size: 1em; 
+}
+
+@keyframes typing {
+
+  0%,
+  100% {
+      content: "";
+  }
+
+  1% {
+      content: "_";
+  }
+
+  2% {
+      content: "_h";
+  }
+
+  3% {
+      content: "_hz";
+  }
+
+  4% {
+      content: "_hzw";
+  }
+
+  30% {
+      content: "";
+  }
+
+  31% {
+      content: "Z";
+  }
+
+  32% {
+      content: "Zi";
+  }
+
+  33% {
+      content: "Ziw";
+  }
+
+  34% {
+      content: "Ziwe";
+  }
+
+  35% {
+      content: "Ziwei";
+  }
+
+  36% {
+      content: "Ziwei H";
+  }
+
+  37% {
+      content: "Ziwei Hu";
+  }
+
+  38% {
+      content: "Ziwei Hua";
+  }
+
+  39% {
+      content: "Ziwei Huan";
+  }
+
+  40% {
+      content: "Ziwei Huang";
+  }
+
+  70% {
+      content: "";
+  }
+
+  71% {
+      content: "黃";
+  }
+
+  72% {
+      content: "黃子";
+  }
+
+  73% {
+      content: "黃子威";
+  }
+}
+
+@keyframes cursor {
+
+  0%,
+  100% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 1;
+  }
+}
