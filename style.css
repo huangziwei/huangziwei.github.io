@@ -74,6 +74,10 @@ header h1 {
   padding: 0 5vw .5em 0;
 }
 
+nav a {
+  font-weight: bold;
+}
+
 nav a:not(:last-of-type) {
   margin-right: 1.5vw;
 }
@@ -295,6 +299,23 @@ section:target iframe {
   visibility: visible;
 }
 
+/* External links */
+
+a[href*=":"] {
+  color: #FFA5B5; 
+}
+
+a[href*=":"]:after {
+  font-weight: 300;
+  font-size: .5em;
+  color: var(--textcolor);
+  opacity: .25;
+}
+
+a[href*=":"]:hover:after {
+  color: var(--highlight);
+  opacity: 1;
+}
 
 /* File links */
 
