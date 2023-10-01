@@ -711,3 +711,22 @@ details summary {
       opacity: 1;
   }
 }
+
+/* columns */
+
+/* Style for small screens */
+.cv-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-column {
+  flex: 1;
+}
+
+/* Style for larger screens */
+@media (min-width: 768px) {
+  .cv-row {
+    flex-direction: row;
+  }
+}
