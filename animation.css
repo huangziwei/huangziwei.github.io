@@ -21,7 +21,7 @@
 }
 
 .type-wrapper::before {
-    animation: typing 10s steps(50, end) infinite;
+    animation: typing 15s steps(50, end) infinite;
     content: "\A";
     white-space: break-spaces;
     font-size: 1em; 
@@ -108,10 +108,6 @@
 
     73% {
         content: "黃子威";
-    }
-
-    99% {
-        content: "";
     }
 }
 
