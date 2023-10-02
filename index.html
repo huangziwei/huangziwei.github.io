@@ -11,27 +11,20 @@
         <meta property="og:title" content="Ziwei Huang" />
         <meta property="og:description" content="SciDev @ Herti AI, Uni-Tü" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="favicon.ico" />
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const toggleSection = (fragment) => {
-                    document
-                        .querySelectorAll("details[open]")
-                        .forEach((d) => (d.open = false));
-                    document
-                        .querySelectorAll("section")
-                        .forEach((s) => (s.style.display = "none"));
+                    document.querySelectorAll("details[open]").forEach((d) => (d.open = false));
+                    document.querySelectorAll("section").forEach((s) => (s.style.display = "none"));
 
                     if (fragment) {
                         const elem = document.getElementById(fragment),
                             section = elem?.closest("section");
                         if (section)
                             (section.style.display = "block"),
-                                elem.tagName === "DETAILS" &&
-                                    (elem.open = true);
+                                elem.tagName === "DETAILS" && (elem.open = true);
                     } else {
-                        document.querySelector("section#home").style.display =
-                            "block";
+                        document.querySelector("section#home").style.display = "block";
                     }
                 };
 
@@ -42,9 +35,7 @@
                 );
 
                 toggleSection(window.location.hash.slice(1));
-                window.addEventListener("hashchange", () =>
-                    toggleSection(window.location.hash.slice(1))
-                );
+                window.addEventListener("hashchange", () => toggleSection(window.location.hash.slice(1)));
 
                 // typing animation
                 const sequences = ["_hzw", "Ziwei Huang", "黃子威"];
@@ -90,8 +81,7 @@
                 <p>
                     Hi, I am
                     <span class="type-wrapper"
-                        ><span id="typed-text"
-                            ><noscript>Ziwei Huang</noscript></span
+                        ><span id="typed-text"><noscript>Ziwei Huang</noscript></span
                         ><span id="cursor" class="cursor">|</span>
                     </span>
                 </p>
@@ -103,13 +93,13 @@
                         <h2 id="employment">Employment</h2>
                         <h3 id="2023-">Since 2023</h3>
                         <p>
-                            Scientific Developer at Berens Lab, Hertie Institute
-                            for AI in Brain Health, University of Tübingen.
+                            Scientific Developer at Berens Lab, Hertie Institute for AI in Brain Health,
+                            University of Tübingen.
                         </p>
                         <h3 id="2022-2023">2022-2023</h3>
                         <p>
-                            Postdoc at Berens Lab, focused on predicting stroke
-                            rehabilitation using statistical modeling.
+                            Postdoc at Berens Lab, focused on predicting stroke rehabilitation using
+                            statistical modeling.
                         </p>
                     </div>
                     <div class="cv-column">
@@ -117,15 +107,11 @@
                         <h3 id="2016-2022">2016-2022</h3>
                         <p>
                             Ph.D. in Neuroscience, supervised by
-                            <a
-                                href="https://hertie.ai/data-science/team/members/philipp-berens"
+                            <a href="https://hertie.ai/data-science/team/members/philipp-berens"
                                 >Philipp Berens</a
-                            >, at the University of Tübingen, Germany. I
-                            developed
-                            <a href="https://github.com/berenslab/RFEst"
-                                >RFEst</a
-                            >, a Python toolbox for neuronal receptive field
-                            estimation<label for="lazy1">1</label
+                            >, at the University of Tübingen, Germany. I developed
+                            <a href="https://github.com/berenslab/RFEst">RFEst</a>, a Python toolbox for
+                            neuronal receptive field estimation<label for="lazy1">1</label
                             ><input type="checkbox" id="lazy1" /><small>
                                 See also:
                                 <a
@@ -133,48 +119,34 @@
                                     >Huang et al. (2021)
                                 </a> </small
                             >. I also studied
-                            <a
-                                href="https://www.nature.com/articles/s41467-020-15867-9"
-                                >dendritic signal integration in various types
-                                of mouse retinal ganglion cells</a
+                            <a href="https://www.nature.com/articles/s41467-020-15867-9"
+                                >dendritic signal integration in various types of mouse retinal ganglion
+                                cells</a
                             >
                             in collaboration with
                             <a
                                 href="https://jchyxy.lzu.edu.cn/shiziduiwu/qingnianyanjiuyuan/2022/0504/194328.html"
                                 >Yanli Ran</a
                             >,
-                            <a href="https://www.eye-tuebingen.de/franke/"
-                                >et</a
-                            >
-                            <a href="https://www.eye-tuebingen.de/euler/">al</a
-                            >.
+                            <a href="https://www.eye-tuebingen.de/franke/">et</a>
+                            <a href="https://www.eye-tuebingen.de/euler/">al</a>.
                         </p>
                         <h3 id="2013-2015">2013-2015</h3>
                         <p>
-                            M.Sc in Neuroscience at the Norwegian University of
-                            Science and Technology (NTNU), Norway. Completed my
-                            thesis on
-                            <a
-                                href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2437083"
+                            M.Sc in Neuroscience at the Norwegian University of Science and Technology (NTNU),
+                            Norway. Completed my thesis on
+                            <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2437083"
                                 >two-population grid cell network</a
-                            ><label for="lazy2">2</label
-                            ><input type="checkbox" id="lazy2" /><small>
+                            ><label for="lazy2">2</label><input type="checkbox" id="lazy2" /><small>
                                 See also:
-                                <a href="https://arxiv.org/abs/1701.04893">
-                                    Dunn, et al. (2017)</a
-                                ></small
+                                <a href="https://arxiv.org/abs/1701.04893"> Dunn, et al. (2017)</a></small
                             >
-                            at the Kavli Institute for Systems Neuroscience
-                            under the supervision of
-                            <a
-                                href="https://www.ntnu.edu/employees/benjamin.dunn"
-                                >Benjamin Dunn</a
-                            >.
+                            at the Kavli Institute for Systems Neuroscience under the supervision of
+                            <a href="https://www.ntnu.edu/employees/benjamin.dunn">Benjamin Dunn</a>.
                         </p>
                         <h3 id="2009-2013">2009-2013</h3>
                         <p>
-                            B.Sc in Applied Psychology at the Guangdong
-                            University of Foreign Studies, China.
+                            B.Sc in Applied Psychology at the Guangdong University of Foreign Studies, China.
                         </p>
                     </div>
                 </div>
@@ -183,10 +155,7 @@
                         <h2 id="publication">Publication</h2>
                         <p>
                             See:
-                            <a
-                                href="https://www.semanticscholar.org/author/47272071"
-                                >Semantic Scholar</a
-                            >
+                            <a href="https://www.semanticscholar.org/author/47272071">Semantic Scholar</a>
                         </p>
                     </div>
                     <div class="cv-column">
@@ -196,13 +165,9 @@
                             /
                             <a href="https://luvdb.com/u/_hzw">LʌvDB</a>
                             /
-                            <a href="https://bsky.app/profile/hzwei.dev"
-                                >Bluesky</a
-                            >
+                            <a href="https://bsky.app/profile/hzwei.dev">Bluesky</a>
                             /
-                            <a href="mailto:ziwei.huang@uni-tuebingen.de"
-                                >Email</a
-                            >
+                            <a href="mailto:ziwei.huang@uni-tuebingen.de">Email</a>
                         </p>
                     </div>
                 </div>
@@ -222,42 +187,27 @@
                     <summary>
                         <h4>
                             Revamped this site with
-                            <a href="https://github.com/cadars/john-doe"
-                                >John Doe</a
-                            >.
+                            <a href="https://github.com/cadars/john-doe">John Doe</a>.
                         </h4>
                         <time datetime="2023-10-01">2023-10-01</time>
                     </summary>
                     <p>
-                        I encountered the John Doe theme a while ago and wanted
-                        to revamp my online CV with it. I've finally managed to
-                        do so today, with some modifications<label
+                        I encountered the John Doe theme a while ago and wanted to revamp my online CV with
+                        it. I've finally managed to do so today, with some modifications<label
                             for="revamped-note-1"
                             >1</label
                         ><input type="checkbox" id="revamped-note-1" /><small
-                            >I added some CSS and JS to animate the home page
-                            and to enable anchoring on all IDs, not just the
-                            navigation. As much as I'd like to avoid using JS,
-                            I've come to understand that it's a necessary evil
-                            for better UX.</small
-                        >. Now, everything is in a single-page HTML file, less
-                        than 3 KB at the moment&mdash;isn't that nice? A TXT of
-                        Jane Austen's Pride and Prejudice on Project Gutenberg
-                        is just 708 kB, and it loads instantly on any browser.
-                        So why should my site be slower than that? And I
-                        certainly don't have that many words to say these days.
-                        But when I do, I absolutely love the
+                            >I added some CSS and JS to animate the home page and to enable anchoring on all
+                            IDs, not just the navigation. As much as I'd like to avoid using JS, I've come to
+                            understand that it's a necessary evil for better UX.</small
+                        >. Now, everything is in a single-page HTML file, less than 3 KB at the
+                        moment&mdash;isn't that nice? A TXT of Jane Austen's Pride and Prejudice on Project
+                        Gutenberg is just 708 kB, and it loads instantly on any browser. So why should my site
+                        be slower than that? And I certainly don't have that many words to say these days. But
+                        when I do, I absolutely love the
                         <span
                             style="
-                                background: linear-gradient(
-                                    90deg,
-                                    red,
-                                    yellow,
-                                    green,
-                                    blue,
-                                    indigo,
-                                    violet
-                                );
+                                background: linear-gradient(90deg, red, yellow, green, blue, indigo, violet);
                                 -webkit-background-clip: text;
                                 color: transparent;
                             "
