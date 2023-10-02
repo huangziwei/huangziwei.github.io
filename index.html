@@ -45,6 +45,33 @@
                 window.addEventListener("hashchange", () =>
                     toggleSection(window.location.hash.slice(1))
                 );
+
+                // typing animation
+                const sequences = ["_hzw", "Ziwei Huang", "黃子威"];
+                let i = 0,
+                    j = 0,
+                    dir = 1;
+                const el = document.getElementById("typed-text");
+
+                function cycleText() {
+                    let delay = 3000; // Delay after completing a sequence
+
+                    const timer = setInterval(() => {
+                        el.textContent = sequences[i].substr(0, j);
+                        j += dir;
+                        if (j > sequences[i].length || j < 0) {
+                            clearInterval(timer);
+                            if (j < 0) {
+                                i = (i + 1) % sequences.length;
+                                delay = 0; // No delay when switching to a new sequence
+                            }
+                            dir = -dir;
+                            setTimeout(cycleText, delay);
+                        }
+                    }, 100); // Speed for both typing and erasing
+                }
+
+                cycleText();
             });
         </script>
     </head>
@@ -60,7 +87,14 @@
 
         <main>
             <section id="home">
-                <p>Hi, I am <span class="type-wrapper"></span></p>
+                <p>
+                    Hi, I am
+                    <span class="type-wrapper"
+                        ><span id="typed-text"
+                            ><noscript>Ziwei Huang</noscript></span
+                        ><span id="cursor" class="cursor">|</span>
+                    </span>
+                </p>
             </section>
 
             <section id="cv">
@@ -192,10 +226,22 @@
                         <time datetime="2023-10-01">2023-10-01</time>
                     </summary>
                     <p>
-                        Everything is in a single-page HTML, isn't it nice?
-                        Having a full-fledged blog is just overkill, as I don't
-                        really have much to say nowadays. But when I do, I just
-                        love the
+                        I encountered the John Doe theme a while ago and wanted
+                        to revamp my online CV with it. I've finally managed to
+                        do so, with some modifications<label
+                            for="revamped-note-1"
+                            >1</label
+                        ><input type="checkbox" id="revamped-note-1" /><small
+                            >I added some CSS animations to the home page and
+                            some JavaScript to make anchoring work on all IDs,
+                            not just the navigation. As much as I want to go
+                            JS-free, I now understand that it is a necessary
+                            evil for a nice UX.</small
+                        >. Now, everything is in a single-page HTML file, and
+                        it's less than 3KB at the moment—isn't that nice? Having
+                        a full-fledged blog is just overkill, as I don't really
+                        have much to say these days. But when I do, I just love
+                        the
                         <span
                             style="
                                 background: linear-gradient(
