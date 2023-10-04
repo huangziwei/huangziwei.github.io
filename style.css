@@ -84,6 +84,9 @@ nav a:not(:last-of-type) {
   margin-right: 1.5vw;
 }
 
+nav a[href="#news"] {
+  margin-right: 0;
+}
 /* ------- General ------- */
 
 a {
