@@ -5,18 +5,10 @@
 
   /* Color scheme */
 
-  --textcolor: #121212;
-  --bgcolor: #fff;
-  --highlight: #2749c9;
+  --textcolor: #f1efef;
+  --bgcolor: #141414;
+  --highlight: #F9E259;
 
-}
-
-@media (prefers-color-scheme: dark) {
-  * {
-    --textcolor: #f1efef;
-    --bgcolor: #141414;
-    --highlight: #F9E259;
-  }
 }
 
 body {
