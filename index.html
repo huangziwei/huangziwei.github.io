@@ -6,11 +6,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-        <title>_hzw</title>
+        <title>Ziwei Huang</title>
         <meta name="description" content="SciDev @ Herti AI, Uni-Tü" />
         <meta property="og:title" content="Ziwei Huang" />
         <meta property="og:description" content="SciDev @ Herti AI, Uni-Tü" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed for News Section" href="rss.xml" />
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const toggleSection = (fragment) => {
@@ -73,6 +74,13 @@
                 <a href="#home">Home</a>
                 <a href="#cv">CV</a>
                 <a href="#news">News</a>
+                <a href="rss.xml">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor">
+                        <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2zm0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2zm.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                        />
+                    </svg>
+                </a>
             </nav>
         </header>
 
@@ -88,6 +96,12 @@
             </section>
 
             <section id="cv">
+                <div class="cv-row">
+                    <h2 id="hiddenName">
+                        Ziwei <span style="color: #f9e259">Huang</span>
+                        <span style="color: #f9e259">黃</span>子威
+                    </h2>
+                </div>
                 <div class="cv-row">
                     <div class="cv-column">
                         <h2 id="employment">Employment</h2>
@@ -175,6 +189,12 @@
 
             <!--Posts-->
             <section id="news">
+                <div class="cv-row">
+                    <h2 id="hiddenName">
+                        Ziwei <span style="color: #f9e259">Huang</span>
+                        <span style="color: #f9e259">黃</span>子威
+                    </h2>
+                </div>
                 <!-- <details id="new-post">
                     <summary>
                         <h4></h4>
@@ -208,8 +228,9 @@
                         <span
                             style="
                                 background: linear-gradient(90deg, red, yellow, green, blue, indigo, violet);
+                                -webkit-text-fill-color: transparent;
                                 -webkit-background-clip: text;
-                                color: transparent;
+                                background-clip: text;
                             "
                             >flexibility</span
                         >

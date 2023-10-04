@@ -76,6 +76,8 @@ header h1 {
 
 nav a {
   font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 nav a:not(:last-of-type) {
@@ -381,144 +383,6 @@ details summary {
   margin-bottom: 0.2em;
 }
 
-/* ------- Images Grid ------- */
-
-.grid {
-  display: grid;
-  grid-gap: 5vmin;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  /* 150px = minimum image size */
-  grid-auto-flow: dense;
-  padding: 2em 0;
-}
-
-.grid a {
-  position: relative;
-  border: 0;
-}
-
-.grid a:hover {
-  transform: scale(.975);
-}
-
-/* For a square ratio */
-.grid a:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-.grid a img {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* ------- Slideshow ------- */
-
-.slides {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.slides figure {
-  height: 100vh;
-  padding: 0 5vw;
-  margin: 0;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  scroll-snap-align: center;
-}
-
-.slides figure img {
-  max-height: 88vh;
-  /* Adjust if needed */
-}
-
-.slides figure.cover {
-  padding: 0;
-}
-
-.slides figure.cover img {
-  max-height: none;
-  position: absolute;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-/* ------- Lightbox ------- */
-
-.lightbox {
-  display: none;
-  color: var(--textcolor);
-}
-
-.lightbox:target {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  background: var(--bgcolor);
-  border: 0;
-  z-index: 3;
-}
-
-.lightbox img {
-  max-height: 100vh;
-  z-index: 4;
-}
-
-.lightbox:target:before {
-  /* Loading spinner */
-  content: "";
-  height: 2em;
-  width: 2em;
-  animation: spin .8s infinite linear;
-  border: 1px solid;
-  border-right-color: transparent;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  transform: translateX(-50%);
-  opacity: .25;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.lightbox:target:after {
-  /* × to close */
-  content: "\00D7";
-  position: fixed;
-  font-size: 2em;
-  font-weight: 200;
-  line-height: 0;
-  top: .75em;
-  right: .5em;
-  z-index: 4;
-}
-
 /* ------- Smaller screens ------- */
 
 @media only screen and (max-width: 680px) {
@@ -537,7 +401,15 @@ details summary {
 
 /* ------- Print ------- */
 
+#hiddenName {
+  display: none;
+}
+
 @media print {
+
+  #hiddenName {
+    display: block;
+  }
 
   nav,
   .lightbox:target:after {
@@ -546,10 +418,21 @@ details summary {
 
   article,
   figure,
-  img {
+  img,
+  .cv-row {
     page-break-inside: avoid;
     break-inside: avoid;
   }
+
+  /* Preserve two-column layout during print */
+  .cv-row {
+    flex-direction: row !important;
+  }
+
+  .cv-column {
+    flex: 1 !important;
+  }
+
 
   /* Inline footnotes */
 
@@ -565,25 +448,12 @@ details summary {
     content: "]";
   }
 
-  /* Slides */
-
-  .slides,
-  .slides figure {
-    position: relative;
-    height: auto;
-    padding: 0;
+  /* Attempt to fit all content on one printed page */
+  body {
+    zoom: 80%; /* Experiment with this value */
+    print-color-adjust: exact;
+    -webkit-print-color-adjust:exact;
   }
-
-  .slides figure img,
-  .slides figure.cover img {
-    max-height: auto;
-    position: relative;
-    z-index: 1;
-    width: auto;
-    height: 100vh;
-    object-fit: contain;
-  }
-
 }
 
 /* Animation */

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0"><channel><title>Ziwei Huang</title><link>https://hzwei.dev</link><description>SciDev @ Herti AI, Uni-Tü</description><item><title>
+                            Revamped this site with
+                            &lt;a href="https://github.com/cadars/john-doe"&gt;John Doe&lt;/a&gt;.
+                        </title><link>https://hzwei.dev#revamped-site</link><guid isPermaLink="false">revamped-site</guid><author>Ziwei Huang</author><pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate><description>
+                        I encountered the John Doe theme a while ago and wanted to revamp my online CV with
+                        it. I've finally managed to do so today, with some modifications&lt;label for="revamped-note-1"&gt;1&lt;/label&gt;&lt;input id="revamped-note-1" type="checkbox"/&gt;&lt;small&gt;I added some CSS and JS to animate the home page and to enable anchoring on all
+                            IDs, not just the navigation. As much as I'd like to avoid using JS, I've come to
+                            understand that it's a necessary evil for better UX.&lt;/small&gt;. Now, everything is in a single-page HTML file, less than 3 KB at the
+                        moment—isn't that nice? A TXT of Jane Austen's Pride and Prejudice on Project
+                        Gutenberg is just 708 kB, and it loads instantly on any browser. So why should my site
+                        be slower than that? And I certainly don't have that many words to say these days. But
+                        when I do, I absolutely love the
+                        &lt;span style="
+                                background: linear-gradient(90deg, red, yellow, green, blue, indigo, violet);
+                                -webkit-text-fill-color: transparent;
+                                -webkit-background-clip: text;
+                                background-clip: text;
+                            "&gt;flexibility&lt;/span&gt;
+                        of hand-written HTML.
+                    </description></item></channel></rss>
