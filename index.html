@@ -12,91 +12,17 @@
         <meta property="og:description" content="SciDev @ Herti AI, Uni-Tü" />
         <link rel="stylesheet" href="style.css" />
         <link rel="alternate" type="application/rss+xml" title="RSS Feed for News Section" href="rss.xml" />
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const toggleSection = (fragment) => {
-                    document.querySelectorAll("details[open]").forEach((d) => (d.open = false));
-                    document.querySelectorAll("section").forEach((s) => (s.style.display = "none"));
-
-                    if (fragment) {
-                        const elem = document.getElementById(fragment),
-                            section = elem?.closest("section");
-                        if (section)
-                            (section.style.display = "block"),
-                                elem.tagName === "DETAILS" && (elem.open = true);
-                    } else {
-                        document.querySelector("section#home").style.display = "block";
-                    }
-                };
-
-                document.querySelectorAll("details").forEach((d) =>
-                    d.addEventListener("toggle", function () {
-                        this.open && (window.location.hash = "#" + this.id);
-                    })
-                );
-
-                toggleSection(window.location.hash.slice(1));
-                window.addEventListener("hashchange", () => toggleSection(window.location.hash.slice(1)));
-
-                // typing animation
-                const sequences = ["_hzw", "Ziwei Huang", "黃子威"];
-                let i = 0,
-                    j = 0,
-                    dir = 1;
-                const el = document.getElementById("typed-text");
-
-                function cycleText() {
-                    let delay = 3000; // Delay after completing a sequence
-
-                    const timer = setInterval(() => {
-                        el.textContent = sequences[i].substr(0, j);
-                        j += dir;
-                        if (j > sequences[i].length || j < 0) {
-                            clearInterval(timer);
-                            if (j < 0) {
-                                i = (i + 1) % sequences.length;
-                                delay = 0; // No delay when switching to a new sequence
-                            }
-                            dir = -dir;
-                            setTimeout(cycleText, delay);
-                        }
-                    }, 100); // Speed for both typing and erasing
-                }
-
-                cycleText();
-            });
-        </script>
     </head>
 
     <body>
         <header>
             <nav>
-                <a href="#home">Home</a>
                 <a href="#cv">CV</a>
                 <a href="#news">News</a>
-                <sup>
-                    <a href="rss.xml" aria-label="RSS">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor">
-                            <path
-                                d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z"
-                            />
-                        </svg>
-                    </a>
-                </sup>
             </nav>
         </header>
 
         <main>
-            <section id="home">
-                <p>
-                    Hi, I am
-                    <span class="type-wrapper"
-                        ><span id="typed-text"><noscript>Ziwei Huang</noscript></span
-                        ><span id="cursor" class="cursor">│</span>
-                    </span>
-                </p>
-            </section>
-
             <section id="cv">
                 <div class="cv-row">
                     <div class="cv-column">
@@ -177,7 +103,7 @@
                         </p>
                     </div>
                     <div class="cv-column">
-                        <h2 id="contact">Contact</h2>
+                        <h2 id="links">Links</h2>
                         <p>
                             <a href="https://github.com/huangziwei">GitHub</a>
                             /
