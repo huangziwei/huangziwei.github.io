@@ -12,6 +12,33 @@
         <meta property="og:description" content="SciDev @ Herti AI, Uni-Tü" />
         <link rel="stylesheet" href="style.css" />
         <link rel="alternate" type="application/rss+xml" title="RSS Feed for News Section" href="rss.xml" />
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const toggleSection = (fragment) => {
+                    document.querySelectorAll("details[open]").forEach((d) => (d.open = false));
+                    document.querySelectorAll("section").forEach((s) => (s.style.display = "none"));
+
+                    if (fragment) {
+                        const elem = document.getElementById(fragment),
+                            section = elem?.closest("section");
+                        if (section)
+                            (section.style.display = "block"),
+                                elem.tagName === "DETAILS" && (elem.open = true);
+                    } else {
+                        document.querySelector("section#cv").style.display = "block";
+                    }
+                };
+
+                document.querySelectorAll("details").forEach((d) =>
+                    d.addEventListener("toggle", function () {
+                        this.open && (window.location.hash = "#" + this.id);
+                    })
+                );
+
+                toggleSection(window.location.hash.slice(1));
+                window.addEventListener("hashchange", () => toggleSection(window.location.hash.slice(1)));
+            });
+        </script>
     </head>
 
     <body>
