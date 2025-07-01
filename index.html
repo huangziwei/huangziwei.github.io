@@ -11,7 +11,6 @@
         <meta property="og:title" content="Ziwei Huang" />
         <meta property="og:description" content="SciDev @ Herti AI, Uni-Tü" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed for News Section" href="rss.xml" />
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const toggleSection = (fragment) => {
@@ -45,7 +44,6 @@
         <header>
             <nav>
                 <a href="#cv">CV</a>
-                <a href="#news">News</a>
             </nav>
         </header>
 
@@ -54,8 +52,8 @@
                 <div class="cv-row">
                     <div class="cv-column">
                         <h1>
-                            Zǐwēi <span style="color: #f9e259">Huáng</span>
-                            <span style="color: #f9e259">黃</span>子威
+                            Zǐwēi <span style="color: #ffd010">Huáng</span>
+                            <span style="color: #ffd010">黃</span>子威
                         </h1>
                     </div>
                 </div>
@@ -68,25 +66,60 @@
                             University of Tübingen.
                         </p>
                         <h4>Current Projects</h4>
+                        <h5>Neuronal morphology</h5>
                         <ul>
                             <li>
-                                <a href="https://github.com/jaxleyverse/jaxley-mech">jaxley-mech</a>: a
-                                library of ion channels and synapses for biophysical neuron models, built on
+                                <a
+                                    href="https://github.com/berenslab/skeliner"
+                                    style="font-weight: bold; font-size: 1.1em"
+                                    >skeliner</a
+                                >
+                                A lightweight Python neuronal mesh skeletonizer.
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/berenslab/pywarper"
+                                    style="font-weight: bold; font-size: 1.1em"
+                                    >pywarper</a
+                                >
+                                Conformal mapping-based warping of retina neuronal morphologies with
+                                Python<label for="pywarper">1</label
+                                ><input type="checkbox" id="pywarper" /><small>
+                                    based on and improved upon
+                                    <a href="https://github.com/uygarsumbul/rgc"
+                                        >the MATLAB implementations</a
+                                    >
+                                    (Sümbül, et al. 2014).</small
+                                >.
+                            </li>
+                        </ul>
+                        <h5>Biophysical modeling</h5>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://github.com/jaxleyverse/jaxley-mech"
+                                    style="font-weight: bold; font-size: 1.1em"
+                                    >jaxley-mech</a
+                                >
+                                a library of ion channels and synapses for biophysical neuron models, built on
                                 <a href="https://github.com/jaxleyverse/jaxley">jaxley</a
-                                ><label for="jaxley">1</label><input type="checkbox" id="jaxley" /><small>
+                                ><label for="jaxley">2</label><input type="checkbox" id="jaxley" /><small>
                                     See also:
                                     <a href="https://www.biorxiv.org/content/10.1101/2024.08.21.608979"
                                         >Deistler et al. (2024)
                                     </a> </small
                                 >.
                             </li>
+                        </ul>
+                        <h5>Statistics</h5>
+                        <ul>
                             <li>
-                                <a href="https://github.com/circstat/pycircstat2">pycircstat2</a>: a rework of
-                                the Python package for circular statistics;
-                            </li>
-                            <li>
-                                <a href="https://github.com/berenslab/retimgtools">retimgtools</a>: a web app
-                                for annotating and evaluating retinal images;
+                                <a
+                                    href="https://github.com/circstat/pycircstat2"
+                                    style="font-weight: bold; font-size: 1.1em"
+                                    >pycircstat2</a
+                                >
+                                a rework of the Python package for circular statistics;
                             </li>
                         </ul>
 
@@ -157,7 +190,7 @@
                         <p>
                             <a href="https://github.com/huangziwei">GitHub</a>
                             /
-                            <a href="https://luvdb.com/u/_hzw">LʌvDB</a>
+                            <a href="https://po.etr.ist">Blog</a>
                             /
                             <a href="https://bsky.app/profile/hzwei.dev">Bluesky</a>
                             /
@@ -167,52 +200,6 @@
                     </div>
                 </div>
                 <div class="cv-row"></div>
-            </section>
-
-            <!--Posts-->
-            <section id="news">
-                <!-- <details id="new-post">
-                    <summary>
-                        <h4></h4>
-                        <time></time>
-                    </summary>
-                    <p></p>
-                </details> -->
-
-                <details id="revamped-site">
-                    <summary>
-                        <h4>
-                            Revamped this site with
-                            <a href="https://github.com/cadars/john-doe">John Doe</a>.
-                        </h4>
-                        <time datetime="2023-10-01">2023-10-01</time>
-                    </summary>
-                    <p>
-                        I encountered the John Doe theme a while ago and wanted to revamp my online CV with
-                        it. I've finally managed to do so today, with some modifications<label
-                            for="revamped-note-1"
-                            >1</label
-                        ><input type="checkbox" id="revamped-note-1" /><small
-                            >I added some CSS and JS to animate the home page and to enable anchoring on all
-                            IDs, not just the navigation. As much as I'd like to avoid using JS, I've come to
-                            understand that it's a necessary evil for better UX.</small
-                        >. Now, everything is in a single-page HTML file, less than 3 KB at the
-                        moment&mdash;isn't that nice? A TXT of Jane Austen's Pride and Prejudice on Project
-                        Gutenberg is just 708 kB, and it loads instantly on any browser. So why should my site
-                        be slower than that? And I certainly don't have that many words to say these days. But
-                        when I do, I absolutely love the
-                        <span
-                            style="
-                                background: linear-gradient(90deg, red, yellow, green, blue, indigo, violet);
-                                -webkit-text-fill-color: transparent;
-                                -webkit-background-clip: text;
-                                background-clip: text;
-                            "
-                            >flexibility</span
-                        >
-                        of hand-written HTML.
-                    </p>
-                </details>
             </section>
         </main>
     </body>

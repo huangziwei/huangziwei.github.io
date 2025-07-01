@@ -7,7 +7,7 @@
 
   --textcolor: #f1efef;
   --bgcolor: #141414;
-  --highlight: #F9E259;
+  --highlight: #FFD010;
 
 }
 
@@ -273,7 +273,7 @@ figure figcaption {
 /* External links */
 
 a[href*=":"] {
-  color: #FFA5B5; 
+  color: #FFD010; 
 }
 
 a[href*=":"]:after {
