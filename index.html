@@ -1,6 +1,6 @@
 <!-- Modified from JOHN DOE’S PAGE - https://github.com/cadars/john-doe/ -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -27,8 +27,8 @@
                         const elem = document.getElementById(fragment),
                             section = elem?.closest("section");
                         if (section)
-                            (section.style.display = "block"),
-                                elem.tagName === "DETAILS" && (elem.open = true);
+                            ((section.style.display = "block"),
+                                elem.tagName === "DETAILS" && (elem.open = true));
                     } else {
                         document.querySelector("section#cv").style.display = "block";
                     }
@@ -37,7 +37,7 @@
                 document.querySelectorAll("details").forEach((d) =>
                     d.addEventListener("toggle", function () {
                         this.open && (window.location.hash = "#" + this.id);
-                    })
+                    }),
                 );
 
                 toggleSection(window.location.hash.slice(1));
@@ -72,7 +72,7 @@
                             University of Tübingen.
                         </p>
                         <h4>Current Projects</h4>
-                        <h5>Neuronal morphology</h5>
+                        <h5>Neuronal morphology (EyeWire II)</h5>
                         <ul>
                             <li>
                                 <a
@@ -131,13 +131,16 @@
                                 >
                                 a rework of the Python package for circular statistics.
                             </li>
+                            <li>
+                                <a
+                                    href="https://github.com/circstat/circlss"
+                                    style="font-weight: bold; font-size: 1.1em"
+                                    >circlss</a
+                                >
+                                distributions for circular generalized additive models for location scale and
+                                shape.
+                            </li>
                         </ul>
-
-                        <h3 id="2022-2023">2022-2023</h3>
-                        <p>
-                            Postdoc at Berens Lab, focused on predicting stroke rehabilitation using
-                            statistical modeling.
-                        </p>
                     </div>
                     <div class="cv-column">
                         <h2 id="education">Education</h2>
